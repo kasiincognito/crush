@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are u my crushes?</title>
+    <style>
+        html, body{
+            height:100%;
+            display:flex;
+            align-items:center;
+            flex-direction:column;
+            background-color:rgb(249, 88, 88);
+        }
+        h1{
+            font-family:Arial;
+            color:pink;
+        }
+        h4{
+            font-family:Arial;
+            color:rgb(249, 88, 88);
+        }
+        b{
+            color:pink;
+        }
+        #container{
+            display:flex;
+            flex-direction:row;
+        }
+        button{
+            background-color:pink;
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">
+        Are <b>U</b> my crush?
+    </h1><br/>
+    <div id="container">
+        <input type="text" placeholder="your name to check" id="answer">
+        <button id="validate">
+            <h4>validate</h4>
+        </button>
+    </div>
+<script>
+    var input = document.getElementById("answer")
+    var answer = input.value
+    var button = document.querySelector("button")
+
+    button.addEventListener("click",function (){
+        if(answer == "mrrobot"){
+            alert("Congrats, you're my crush!")
+        }
+        else{
+            alert("U're not my crush")
+        }
+    })
+    
+</script>
+</body>
+</html>
