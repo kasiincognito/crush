@@ -1,0 +1,26 @@
+html, body{
+    height:100%;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    background-color:rgb(249, 88, 88);
+}
+h1{
+    font-family:Arial;
+    color:pink;
+}
+h4{
+    font-family:Arial;
+    color:rgb(249, 88, 88);
+}
+b{
+    color:pink;
+}
+#container{
+    display:flex;
+    flex-direction:row;
+}
+button{
+    background-color:pink;
+    border:none;
+}
